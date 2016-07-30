@@ -53,7 +53,19 @@ body{overflow:hidden; background:transparent; }
 <div id="playerW" data-bind="style:{ top:placement()=='top'?'0':'auto', 
 	bottom:placement()=='top'?'auto':'0',height:'50px'}"></div>
 	<div id="reproductor">
-<audio controls="true" autoplay="autoplay"><source src="http://rosetta.shoutca.st:8325//;stream.mp3" type="audio/mp3">Your browser does not support the audio element.</audio>
+<script src='https://sites.google.com/site/kpopreplaydeli/home/files/reprokr.min.js'/>
+          <script>
+    $.kast({
+       host: &quot;rosetta.shoutca.st&quot;,
+       port: 8325,
+       version: 2,
+autoPlay: &quot;true&quot;,
+startTemplate: &#39;minimized&#39;,
+position: &quot;right&quot;,
+theme: &quot;dark&quot;,
+      colors: &quot;dynamic&quot;,
+    })
+</script>
 </div>
 
 
