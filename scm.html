@@ -51,8 +51,7 @@ body{overflow:hidden; background:transparent; }
 </div>
 <div id="playerW" data-bind="style:{ top:placement()=='top'?'0':'auto', 
 	bottom:placement()=='top'?'auto':'0',height:'25px'}"></div>
-<div id="playlistW" data-bind="style:{top:placement()=='top'?'25px':'0',
-		bottom:placement()=='top'?'0':'25px', width:showPlaylist()?'202px':'0'}"></div>
+
 
 <script type="text/javascript" src="js/lib/soundmanager/soundmanager2-nodebug-jsmin.js"></script>
 <script type="text/javascript" src="config.js?168"></script>
@@ -61,7 +60,6 @@ body{overflow:hidden; background:transparent; }
 require([
 	'knockout','jquery','underscore',
 	'text!view/player.html',
-	'text!view/playlist.html',
 	'scm','song','scm.ui',
 
 	'binding/slider',
