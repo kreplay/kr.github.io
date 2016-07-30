@@ -17,6 +17,9 @@ body{overflow:hidden; background:transparent; }
 </style>
 <link rel="stylesheet" type="text/css" href="css/scm.css?168" />
 <link rel="stylesheet" type="text/css" data-bind="attr:{href:skin}" id="skin" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<link href="https://sites.google.com/site/kpopreplaydeli/home/files/kast.min.css" type="text/css" rel="stylesheet">
+<script src="https://sites.google.com/site/kpopreplaydeli/home/files/reprokr.min.js"></script>
 </head>
 <body>
 	<div id="contentW" data-bind="style:{top:placement()=='top'?'25px':'0',
@@ -53,17 +56,13 @@ body{overflow:hidden; background:transparent; }
 <div id="playerW" data-bind="style:{ top:placement()=='top'?'0':'auto', 
 	bottom:placement()=='top'?'auto':'0',height:'50px'}"></div>
 	<div id="reproductor">
-<script src='https://sites.google.com/site/kpopreplaydeli/home/files/reprokr.min.js'/>
-          <script>
+<script>
     $.kast({
-       host: &quot;rosetta.shoutca.st&quot;,
+       host: "rosetta.shoutca.st",
        port: 8325,
        version: 2,
-autoPlay: &quot;true&quot;,
-startTemplate: &#39;minimized&#39;,
-position: &quot;right&quot;,
-theme: &quot;dark&quot;,
-      colors: &quot;dynamic&quot;,
+autoPlay: "true",
+startTemplate: 'minimized',
     })
 </script>
 </div>
