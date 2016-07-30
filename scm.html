@@ -76,7 +76,7 @@ require([
 			config(data);
 			ko.applyBindings(SCM,$('#skin').get(0));
 			setTimeout(function(){
-				$('#contentW,#playerW,#playlistW').each(function(){
+				$('#contentW,#playerW').each(function(){
 					ko.applyBindings(SCM,this);
 					$(this).mousedown(function(){
 						return false;
