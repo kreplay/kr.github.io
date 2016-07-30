@@ -12,7 +12,8 @@ body{overflow:hidden; background:transparent; }
 #contentW,#playerW{ position:absolute; overflow:hidden;}
 #contentW{z-index:10; top:0; bottom:0; left:0; right:0;}
 #playerW{z-index:2; left:0; right:0; height:0;}
-#content{ position:relative; height:100%; width:100%;  }
+#content{ position:relative; height:100%; width:100%; 
+#reproductor { position:fixed;top:0;z-index:999;}}
 </style>
 <link rel="stylesheet" type="text/css" href="css/scm.css?168" />
 <link rel="stylesheet" type="text/css" data-bind="attr:{href:skin}" id="skin" />
@@ -51,8 +52,9 @@ body{overflow:hidden; background:transparent; }
 </div>
 <div id="playerW" data-bind="style:{ top:placement()=='top'?'0':'auto', 
 	bottom:placement()=='top'?'auto':'0',height:'50px'}"></div>
+	<div id="reproductor">
 <audio controls="true" autoplay="autoplay"><source src="http://rosetta.shoutca.st:8325//;stream.mp3" type="audio/mp3">Your browser does not support the audio element.</audio>
-
+</div>
 
 
 <script type="text/javascript" src="js/lib/soundmanager/soundmanager2-nodebug-jsmin.js"></script>
